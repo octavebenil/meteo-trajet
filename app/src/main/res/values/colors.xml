@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#1E5AA8</color>
+    <color name="brand_dark">#9CC3FF</color>
+    <color name="advice_bus">#2E7D32</color>
+    <color name="advice_car">#C62828</color>
+    <color name="advice_unknown">#616161</color>
+    <color name="rain_highlight">#332196F3</color>
+    <color name="launcher_bg">#1E5AA8</color>
+</resources>

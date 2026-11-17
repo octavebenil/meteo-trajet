@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Météo Trajet</string>
+    <string name="settings">Réglages</string>
+    <string name="temp_placeholder" translatable="false">--°</string>
+    <string name="refresh">Actualiser</string>
+    <string name="my_location">Ma position</string>
+    <string name="updated_at">Mis à jour à %1$s</string>
+    <string name="current_detail">%1$s · ressenti %2$s · vent %3$.0f km/h</string>
+    <string name="hourly_title">Heure par heure</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="tomorrow">Demain</string>
+    <string name="advice_title_format">%1$s : %2$s</string>
+
+    <string name="advice_car">🚗 Prends la voiture</string>
+    <string name="advice_bus">🚌 Le bus, c\'est bon</string>
+    <string name="advice_unknown">Prévisions indisponibles</string>
+    <string name="advice_car_detail">Risque de pluie dès %1$s (%2$d %%). Maximum sur tes trajets : %3$d %%, cumul %4$.1f mm.</string>
+    <string name="advice_bus_detail">Pas de pluie prévue sur tes trajets (risque max %1$d %%).</string>
+    <string name="advice_unknown_detail">Impossible d\'évaluer le risque de pluie pour l\'instant.</string>
+    <string name="data_may_be_outdated">Données hors ligne, peut-être pas à jour.</string>
+
+    <string name="rain_alert_title">☔ Pluie en approche</string>
+    <string name="rain_alert_text">Pluie probable vers %1$s (%2$d %%, %3$.1f mm).</string>
+
+    <string name="error_no_location">Position introuvable. Active la localisation et autorise l\'application.</string>
+    <string name="error_network">Pas de connexion : affichage des dernières données connues.</string>
+
+    <string name="channel_morning">Conseil du matin</string>
+    <string name="channel_morning_desc">Bus ou voiture : le conseil quotidien selon la météo.</string>
+    <string name="channel_rain">Alertes pluie</string>
+    <string name="channel_rain_desc">Prévient quand la pluie arrive dans les prochaines heures.</string>
+    <string name="channel_service">Vérification en cours</string>
+    <string name="checking_weather">Vérification de la météo…</string>
+    <string name="alarm_ringing">⏰ Réveil météo</string>
+    <string name="alarm_ringing_text">Risque de pluie aujourd\'hui. Touchez pour arrêter.</string>
+    <string name="stop">Arrêter</string>
+
+    <string name="cond_clear">Ciel dégagé</string>
+    <string name="cond_partly_cloudy">Partiellement nuageux</string>
+    <string name="cond_cloudy">Couvert</string>
+    <string name="cond_fog">Brouillard</string>
+    <string name="cond_drizzle">Bruine</string>
+    <string name="cond_rain">Pluie</string>
+    <string name="cond_freezing_rain">Pluie verglaçante</string>
+    <string name="cond_snow">Neige</string>
+    <string name="cond_showers">Averses</string>
+    <string name="cond_thunderstorm">Orage</string>
+    <string name="cond_unknown">Inconnu</string>
+
+    <string name="section_morning">Notification du matin</string>
+    <string name="alarm_enabled">Activer la notification du matin</string>
+    <string name="alarm_time">Heure de la notification</string>
+    <string name="sound_enabled">Sonnerie d\'alarme</string>
+    <string name="sound_only_rain">Sonner seulement s\'il risque de pleuvoir</string>
+    <string name="ringtone">Sonnerie</string>
+    <string name="ringtone_default">Sonnerie par défaut</string>
+    <string name="exact_alarm_warning">⚠️ Les alarmes exactes ne sont pas autorisées : la notification peut être retardée. Touchez pour autoriser.</string>
+    <string name="section_rain">Pluie</string>
+    <string name="threshold">Seuil d\'alerte pluie</string>
+    <string name="threshold_value">%1$d %%</string>
+    <string name="day_alerts">Alertes pluie dans la journée</string>
+    <string name="day_alerts_summary">Mise à jour toutes les heures, alerte si pluie dans les 3 prochaines heures.</string>
+    <string name="section_commute">Trajets</string>
+    <string name="outbound">Trajet aller</string>
+    <string name="return_trip">Trajet retour</string>
+</resources>
