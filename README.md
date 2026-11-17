@@ -36,6 +36,40 @@ Les prévisions viennent de l'API gratuite [Open-Meteo](https://open-meteo.com/)
 - Android 8.0 (API 26) ou plus récent.
 - Pour compiler : JDK 17 ou plus et le SDK Android (plateforme 35).
 
+## Installation
+
+Chaque push sur `main` publie automatiquement une nouvelle version dans les [Releases](../../releases) du dépôt.
+
+1. Sur le téléphone, ouvrez la dernière release et téléchargez le fichier `meteo-trajet-vX.Y.Z.apk`.
+2. Ouvrez-le et autorisez l'installation depuis cette source si Android le demande.
+
+Les versions suivantes s'installent par-dessus la précédente, sans perdre les réglages.
+
+## Publication automatique
+
+Le workflow `.github/workflows/release.yml` lance les tests, compile l'APK signé et crée la release `v1.0.N`. `N` est le numéro d'exécution du workflow et sert aussi de `versionCode`.
+
+La signature utilise quatre secrets du dépôt (*Settings → Secrets and variables → Actions*) :
+
+| Secret | Contenu |
+| --- | --- |
+| `SIGNING_KEYSTORE_BASE64` | Le fichier keystore encodé en base64 |
+| `SIGNING_STORE_PASSWORD` | Mot de passe du keystore |
+| `SIGNING_KEY_ALIAS` | Alias de la clé |
+| `SIGNING_KEY_PASSWORD` | Mot de passe de la clé |
+
+Créer une clé :
+
+```bash
+keytool -genkeypair -v -keystore release.jks -storetype PKCS12 -alias meteo-trajet -keyalg RSA -keysize 4096 -validity 10000
+```
+
+```bash
+base64 -w0 release.jks
+```
+
+Sans ces secrets, l'APK est signé avec une clé de test temporaire. Il faut alors désinstaller l'ancienne version avant d'installer la nouvelle. Gardez une copie du keystore en lieu sûr : sans lui, impossible de publier une mise à jour installable par-dessus.
+
 ## Compilation
 
 ```bash
